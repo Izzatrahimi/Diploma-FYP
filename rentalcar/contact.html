@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+  
+<!-------------------------------------------------------->
+<body>
+
+  <!-- Top Navigation -->
+<nav>
+      <a href="index.html"><img src="img/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+             <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#ticket">RENTAL</a></li>
+            <li><a href="register/login.php">LOGIN</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="add_feedback.php">FEEDBACK</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<!-- HEADER -->
+
+<div class="parallax_head">
+
+  <h2>CONTACT</h2>
+  <h3>Rental Car Developer</h3>
+
+</div>
+
+<!---ABOUT US CONTENT-------------------------->
+<section class="table1">
+  <table>
+      <tr id="header1">
+          <th style="width:25%">DEVELOPER</th>
+          <th style="width:75%">INFORMATION</th>
+
+      </tr>
+      <tr id="rows">
+          <td><img src="img/izzat.jpg" alt="" width=50%></img> </td>
+          <td>Muhammad Izzat Rahimi Bin Abdul Rahman
+            <br>D031910078
+            <br>012-345-6789
+            <br>izzatrahimi@gmail.com
+            <br>Diploma in Information Technology and Communication
+          </td>
+      </tr>
+  </table>
+</section>
+<br><br>
+
+<!-- FOOTER SECTION -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>Copyright &copy; 2021 HTML. Designed By <a href="#">Izzat Rahimi</a></p>
+        </div>
+    </section>
+
+<!---JavaScript for toggle Menu------------------------------------------------>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>

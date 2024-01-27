@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
+}
+
+body
+{
+  background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 10px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #d12A17;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.greatinguser{
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+.container{
+  font-family: "Poppins", sans-serif;
+  color: #121212;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    margin-left: 5%;
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+  }
+  .text-box p{
+    margin: 20px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+@media screen and (max-height: 450px) {
+
+}
+
+/*-------- view_user.php-------*/
+.main {
+  margin-top: 50px;
+  margin-left: 150px; /* Same as the width of the sidenav */
+}
+
+.greetinguser{
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  border: 3px solid #E0E0E0;
+  padding: 30px;
+  width: 50%;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  border-width:1px;  
+  border-style:inset;
+  border-color: #000000;
+}
+th {
+  background-color: #F5F5F5;
+  padding: 8px;
+  opacity: 0.9;
+  border-width:1px;  
+  border-style: inset;
+  text-align: center;
+}
+td {
+  padding: 8px;
+  background-color: #F5F5F5;
+  opacity: 0.9;
+  border-width:1px;  
+  border-style:inset;
+}
+
+.button1 {
+  background-color: #B0C4DE;
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button1:hover {
+  opacity: 1;
+  background-color: whitesmoke;
+}
+
+.btn {
+  background-color: #FFFFE0; 
+  border: none; 
+  color: black; 
+  padding: 12px 16px; 
+  font-size: 16px;
+  cursor: pointer; 
+}
+
+@media screen and (max-height: 450px) {
+
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #80604d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  width: 50%;
+}
+
+input[type=text]:focus {
+  border: 3px solid black;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #80604D;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  width: 50%;
+}
+
+input[type=password]:focus{
+   border: 3px solid black;
+}
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #80604D;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  width: 50%;
+}
+textarea:focus {
+  border: 3px solid black;
+}
+
+/*-------- add_car.php-------*/
+select {
+        width: 390px;
+        border: 3px solid #728c69;
+
+}
+select:focus {
+        min-width: 390px;
+        width: auto;
+}
+
+/*  Rental Car Services */
+.course{
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 1.5px;
+  backdrop-filter: blur(7px);
+}
+
+.services-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.services-container .box{
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 1.0);
+  background-color: #1115;
+
+}
+
+.services-container .box .box-img{
+  width: 100%;
+  height: 200px;
+}
+
+.services-container .box .box-img img{
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.services-container .box p{
+  padding: 0 10px;
+  border: 1px solid;
+  color: black;
+  width: 35px;
+  border-radius: 0.5rem;
+  margin: 1rem 0 1rem;
+  font-family: sans-serif;
+  color: white;
+}
+
+.services-container .box h3{
+  font font-weight: 500;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.services-container .box h2{
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font font-weight: 600;
+  color: crimson;
+  margin:  0.2rem 0 0.5rem;
+  text-align: left;
+}
+
+.services-container .box h2 span{
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: gray;
+}
+
+.services-container .box .btn{
+  display: flex;
+  justify-content: center;
+  background: green;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0.5rem;
+  font-family: sans-serif;
+}
+
+.services-container .box .btn:hover{
+  background: darkgreen;
+}
